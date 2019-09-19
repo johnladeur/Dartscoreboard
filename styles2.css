@@ -1,42 +1,41 @@
-p{
-  color: white;
-  margin-left: 20px;
-}
-body {
-  font-family: "Lato", sans-serif;
+body{
+  background-color: #26303d;
 }
 
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
+.form-group{
+  text-align: center;
+  width: 35%;
+  margin-left: 35%;
+  font-size: 1.5rem;
+  color: #fff;
 }
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
+.btn-primary{
+  position: relative;
+ 
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+#game-type-select{
+  font-size: 1.5rem;
+  text-align: center;
 }
 
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+#add-player{
+  margin-left: 41%;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+h1{
+  margin-left: 40%;
+  color: #fff;
 }
+
+h5{
+  margin-left: 43%;
+  color: #fff;
+}
+
+@media (max-width: 1028px) {
+
+  #h1 {
+    text-align: center;
+  }
