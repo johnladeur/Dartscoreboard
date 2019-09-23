@@ -25,13 +25,19 @@ body{
 }
 
 h1{
-  margin-left: 40%;
+  margin-left: 32%;
+  margin-top: 7%;
+  margin-bottom: 2%;
+  font-size: 3.5rem;
   color: #fff;
+  font-family: 'Candal', sans-serif;
 }
 
 h5{
-  margin-left: 43%;
+  margin-left: 41%;
+  margin-bottom: 2%;
   color: #fff;
+  font-family: 'Candal', sans-serif;
 }
 
 @media (max-width: 1028px) {
@@ -39,3 +45,4 @@ h5{
   #h1 {
     text-align: center;
   }}
+
