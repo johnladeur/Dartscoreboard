@@ -13,37 +13,72 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<form>
- 
+<div class="container">
 
-<h1>Who Fuckin' Darted?!</h1>
+  <div id="new-game-form">
 
-<h5>A hub for lovers... of the game.</h5>
-
-    <div class="form-group">
-      <label for="game-type-select">Game Type</label>
-      <select class="form-control" id="game-type-select">
-        <option>Cricket</option>
-        <option>Cricket - Cutthroat</option>
-        <option>301</option>
-        <option>501</option>
-        <option>701</option>
-        <option>1001</option>
-      </select>
-    </div>
-    
-    <div id="players-group" class="form-group">
-        <label>Players</label>
-        <input type="text" class="form-control">
-       
+    <h1>Who Fuckin' Darted?!</h1>
+    <h5>A hub for lovers... of the game...of darts.</h5>
+  
+  <form>
+      <div class="form-group">
+        <label class="game-label" for="game-type-select">Game Type</label>
+        <select class="form-control" id="game-type-select">
+          <option>Cricket</option>
+          <option>Cricket - Cutthroat</option>
+          <option>301</option>
+          <option>501</option>
+          <option>701</option>
+          <option>1001</option>
+        </select>
       </div>
-      <button class="btn btn-primary" id="add-player" type="button">Add Player</button>
-      <button class="btn btn-primary" id="start-game"type="button">Start Game</button>
-
-  </form>
-
-
+      
+      <div id="players-group" class="form-group">
+          <label>Players</label>
+          <input  type="text" class="form-control player-input">
+         
+        </div>
+        <button class="btn btn-primary" id="add-player" type="button">Add Player</button>
+        <button class="btn btn-primary" id="start-game"type="button">Start Game</button>
+  
+    </form>
+  </div>
+  
+  <div id="game-board">
+    <table class="table table-dark">
+      <thead>
+        <tr class="header">
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="value value-20">
+          <th scope="row">20</th>
+        </tr>
+        <tr class="value value-19">
+          <th scope="row">19</th>
+        </tr>
+        <tr class="value value-18">
+          <th scope="row">18</th>
+        </tr>
+        <tr class="value value-17">
+          <th scope="row">17</th>
+        </tr>
+        <tr class="value value-16">
+          <th scope="row">16</th>
+        </tr>
+        <tr class="value value-15">
+          <th scope="row">15</th>
+        </tr>
+        <tr class="value value-B">
+          <th scope="row">B</th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
+
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
