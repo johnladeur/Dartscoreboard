@@ -110,7 +110,7 @@ class Cricket extends DartsGame {
             return this.winner;
         }
         super.update(playerIndex, hitKey);
-        const hitTarget = this.validTargets.find((target) => target.key === hitKey);
+        const hitTarget = this.validTargets.find((target) => target.key == hitKey);
         const player = this.state.players[playerIndex];
         if (hitTarget && player) {
             player.boardState[hitKey] += 1;
@@ -259,6 +259,7 @@ class CricketFactory {
 
 
 const gameFactory = new GameFactory();
+
 function runTests() {
     runCricketTests();
     runCutthroutCricketTests();
