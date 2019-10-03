@@ -5,12 +5,20 @@ $(document).ready(function() {
         cloned.appendTo("#players-group");
     });
 
+
     $("#start-game").click(function(){
         $("#new-game-form").hide();
         let players = [];
         $(".player-input").each((index, elem) => {
             players.push($(elem).val());
         }) 
+    
+        
+
+           $("#game-board").show()
+
+        
+
 
         // players = ["asjkdbaskdj", "qwe"]
         buildScoreBoard(players);
@@ -45,3 +53,5 @@ function addPlayerRow(player, index, value) {
     const row = `<th scope="col" class="player-${index}"></th>`;
     $(`#game-board .value-${value}`).append(row);
 }
+
+document.getElementById("game-board").style.display = "none";
